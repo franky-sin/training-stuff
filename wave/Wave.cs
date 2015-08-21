@@ -4,12 +4,21 @@ using System.IO;
 using System.Collections.Generic;
 
 
+class Hunter{
+	bool knows_victim_location
+}
+
+abstract class Char {
+	
+}
+
 class Program
 {
 	static Dictionary<Char, Boolean> symbols{
 		get{
 			Dictionary<Char, Boolean> res = new Dictionary<Char, Boolean>();
 			res.Add('b', false);
+			res.Add('#', false);
 			res.Add(' ', true);
 			res.Add('s', true);
 			res.Add('f', true);
@@ -256,14 +265,14 @@ class Program
 		}
 
 		for (int i =0; i < map.Length; i++){
-			Console.Write("|");
+			// Console.Write("|");
 			for(int j =0; j < map[i].Length; j++){
 				if('w' == map[i][j]){
 					Console.Write(' ');
 				}else{
 					Console.Write(map[i][j]);
 				}
-				Console.Write("|");
+				// Console.Write("|");
 			}
 			Console.WriteLine();
 		}
@@ -278,7 +287,7 @@ class Program
 
 		for(int k = (res.Count-1); k >= 0; k--){
 			for (int i =0; i < map.Length; i++){
-				Console.Write("|");
+				// Console.Write("|");
 				for(int j =0; j < map[i].Length; j++){
 					if(i == res[k].Key && j == res[k].Value){
 						Console.Write('@');
@@ -288,7 +297,7 @@ class Program
 						Console.Write(map[i][j]);
 					}
 					// Console.Write(res[i][j]);
-					Console.Write("|");
+					// Console.Write("|");
 				}
 				Console.WriteLine();
 			}

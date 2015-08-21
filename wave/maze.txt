@@ -1,39 +1,39 @@
-s           b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b         b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b         b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b         b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b         b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b         b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b                                                                                       
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b         b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b     b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b   b  bb b 
-  b         b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  bb b  b  f 
+s           #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #         #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #         #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #         #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #         #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #         #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #                                                                                       
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #         #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #     #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## #   #  ## # 
+  #         #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  ## #  #  f 
