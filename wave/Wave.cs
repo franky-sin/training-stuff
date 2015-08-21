@@ -4,12 +4,84 @@ using System.IO;
 using System.Collections.Generic;
 
 
-class Hunter{
-	bool knows_victim_location
-}
+abstract class Agent {
+	int sight = 2;
+	List<KeyValuePair<int,int>> memory;
+	Dictionary<KeyValuePair<int,int>, char> i_see;
+	char [][] i_see_map;
+	KeyValuePair<int,int> pos;
 
-abstract class Char {
-	
+	public Agent(){
+		memory = new List<KeyValuePair<int,int>>();
+	}
+
+	public void doLive(){
+		LookAround();
+		KeyValuePair<int,int> dist = MakeDecision();
+		GoToPos(dist);
+	}
+
+	private void GoToPos( KeyValuePair<int,int> dist ){
+
+	}
+
+	private KeyValuePair<int,int> MakeDecision(){
+		KeyValuePair<int,int> dist;
+
+		return dist;
+	}
+
+	public void Remember(){
+
+	}
+
+	public void LookAround(){
+		Remember();
+		i_see = new Dictionary<KeyValuePair<int,int>, char>();
+
+	}
+
+	private void LookDirection(String  direction){
+		bool Blocked = false;
+		for(int look = 1; look <= sight; look++){}
+			switch (direction)
+			{
+				KeyValuePair<int, int> looking_at;
+				case "u":
+					 looking_at = new KeyValuePair<int,int>(pos.Key-look, pos.Value);
+					break;
+				case "d":
+					looking_at = new KeyValuePair<int,int>(pos.Key+look, pos.Value);
+					break;
+				case "r":
+					looking_at = new KeyValuePair<int,int>(pos.Key, pos.Value+look);
+					break;
+				case "l":
+					looking_at = new KeyValuePair<int,int>(pos.Key, pos.Value-look);
+					break;
+				case "ul":
+					looking_at = new KeyValuePair<int,int>(pos.Key-look, pos.Value-look);
+					break;
+				case "ur":
+					looking_at = new KeyValuePair<int,int>(pos.Key-look, pos.Value+look);
+					break;
+				case "dl":
+					looking_at = new KeyValuePair<int,int>(pos.Key+look, pos.Value-look);
+					break;
+				case "dr":
+					looking_at = new KeyValuePair<int,int>(pos.Key+look, pos.Value+look);
+					break;
+				default:
+					looking_at = new KeyValuePair<int,int>(pos.Key, pos.Value);
+					break;
+				i_see.Add(new KeyValuePair<KeyValuePair<int,int>, bool>(looking_at, symbols[looking_at]));
+				Blocked = !symbols[looking_at];
+			}
+			if(Blocked){
+				break;
+			}
+		}
+	}
 }
 
 class Program
@@ -23,6 +95,7 @@ class Program
 			res.Add('s', true);
 			res.Add('f', true);
 			res.Add('w', true);
+			res.Add('@', true);
 			return res;
 		}
 	}
@@ -232,8 +305,6 @@ class Program
 			return null;
 		}
 
-		return path;
-
 		Console.WriteLine("Path Finder >> ");
 		for (int i =0; i < pathFinder.Length; i++){
 			Console.Write("|");
@@ -248,11 +319,13 @@ class Program
 			Console.WriteLine();
 		}
 
-		foreach(KeyValuePair<int,int> p in path){
-			map[p.Key][p.Value] = '@';
-		}
-		// return map;
-		return null;
+		return path;
+
+		// foreach(KeyValuePair<int,int> p in path){
+		// 	map[p.Key][p.Value] = '@';
+		// }
+		// // return map;
+		// return null;
 	}
 
 	static void Main(string[] args)
