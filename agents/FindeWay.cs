@@ -27,7 +27,7 @@ class Program
 		String[] directions = new String[]{"u","d","l","r"};
 		// ,"ur","ul","dr","dl"
 
-		KeyValuePair<int,int> dist;
+		public KeyValuePair<int,int> dist {get; private set;}
 
 		public Agent(char sym, String Name){
 			this.sym = sym;
@@ -38,22 +38,26 @@ class Program
 
 		public void doLive(){
 			try{
+				Console.WriteLine("dist before >> " + dist);
+				Console.WriteLine("pos before >> " + pos);
 				GoToPos(dist);											// Agent goes to new position
+				memory.Add(dist);
+				Console.WriteLine("pos after >> " + pos);
 			}catch(Exception E){
 
 			}
 			if(null != i_see){
 				i_see.Clear();
-				Console.WriteLine("i see clear");
+				// Console.WriteLine("i see clear");
 			}
 			if(null != choices){
-				Console.WriteLine("choices clear");
+				// Console.WriteLine("choices clear");
 				choices.Clear();
 			}
 			i_see = new Dictionary<KeyValuePair<int,int>, bool>();
-			Console.WriteLine("i see size {0}", i_see.Count);
+			// Console.WriteLine("i see size {0}", i_see.Count);
 			choices = new List<KeyValuePair<int,int>> ();
-			LookAround();									// Agent read data of nearby objects
+			LookAround();									// Agent reads data of nearby objects
 			dist = MakeDecision();	// Agent makes decision where to go, and remembers current position
 		}
 
@@ -63,28 +67,28 @@ class Program
 		}
 
 		private KeyValuePair<int,int> MakeDecision(){
-			KeyValuePair<int,int> dist;
-			Console.WriteLine("KeyValuePair<int,int> dist;");
-			Console.WriteLine("HasChoice >> " + HasChoice);
-			Console.WriteLine("i_see >> {0}" , i_see.Count);
+			// KeyValuePair<int,int> dist;
+			// Console.WriteLine("KeyValuePair<int,int> dist;");
+			// Console.WriteLine("HasChoice >> " + HasChoice);
+			// Console.WriteLine("i_see >> {0}" , i_see.Count);
 			// if(8 <= this.i_see.Count){
 			// 	Console.WriteLine("if(8 <= i_see.Count){");
 			// 	dist = pos;
 			// }else 
 			if(HasChoice){
-				Console.WriteLine("}else if(HasChoice){");
+				// Console.WriteLine("}else if(HasChoice){");
 				TraceBack = memory.Count - 1;
-				Console.WriteLine("TraceBack = memory.Count - 1;");
+				// Console.WriteLine("TraceBack = memory.Count - 1;");
 				Random rnd = new Random();
 				int index = rnd.Next(0, choices.Count);
 				dist = choices[index];
 				memory.Add(pos);
 			}else if(-1 != TraceBack){
-				Console.WriteLine("}else if(-1 != TraceBack){");
+				// Console.WriteLine("}else if(-1 != TraceBack){");
 				dist = memory[TraceBack];
 				TraceBack--;
 			}else{
-				Console.WriteLine("}else{");
+				Console.WriteLine("}else{ dist = pos");
 				dist = pos;
 			}
 
@@ -130,12 +134,12 @@ class Program
 				looking_at = new KeyValuePair<int,int>(pos.Key+y, pos.Value+x);
 				bool in_Map = map.Length > looking_at.Key && 0 <= looking_at.Key && map[looking_at.Key].Length > looking_at.Value && 0 <= looking_at.Value;
 				if(in_Map){
-					Console.WriteLine("corners {0}", corners);
-					Console.WriteLine("{0} : {1}",looking_at.Key, looking_at.Value);
-					Console.WriteLine("i see add");
+					// Console.WriteLine("corners {0}", corners);
+					// Console.WriteLine("{0} : {1}",looking_at.Key, looking_at.Value);
+					// Console.WriteLine("i see add");
 					i_see.Add(looking_at, symbols[map[looking_at.Key][looking_at.Value]]);
 					bool Blocked = !symbols[map[looking_at.Key][looking_at.Value]];
-					Console.WriteLine("Blocked {0}", Blocked);
+					// Console.WriteLine("Blocked {0}", Blocked);
 					if(!Blocked){
 						foreach(String d in temp_dirs){
 							LookDirection(d, looking_at, 1);
@@ -183,15 +187,15 @@ class Program
 				// Console.WriteLine("in_Map >> " + in_Map);
 				if(in_Map){
 					// Console.WriteLine("map[looking_at.Key][looking_at.Value] >> " + map[looking_at.Key][looking_at.Value]);
-					Console.WriteLine("{0} : {1}",looking_at.Key, looking_at.Value);
-					Console.WriteLine("i see add");
+					// Console.WriteLine("{0} : {1}",looking_at.Key, looking_at.Value);
+					// Console.WriteLine("i see add");
 					i_see.Add(looking_at, symbols[map[looking_at.Key][looking_at.Value]]);
 					Blocked = !symbols[map[looking_at.Key][looking_at.Value]];
 					// Console.WriteLine("look >> " + look);
 					// Console.WriteLine("Blocked >> " + Blocked);
 					if(sight == look && !Blocked && !memory.Contains(looking_at) && !choices.Contains(looking_at)){
 						// -1 == Array.IndexOf(memory, looking_at)
-						Console.WriteLine("choices add");
+						// Console.WriteLine("choices add");
 						choices.Add(looking_at);
 					}
 					if(Blocked){
@@ -240,14 +244,14 @@ class Program
 				bool in_Map = map.Length > looking_at.Key && 0 <= looking_at.Key && map[looking_at.Key].Length > looking_at.Value && 0 <= looking_at.Value;
 				// Console.WriteLine("in_Map >> " + in_Map);
 				if(in_Map){
-					Console.WriteLine("additional sight");
-					Console.WriteLine("map[looking_at.Key][looking_at.Value] >> " + map[looking_at.Key][looking_at.Value]);
+					// Console.WriteLine("additional sight");
+					// Console.WriteLine("map[looking_at.Key][looking_at.Value] >> " + map[looking_at.Key][looking_at.Value]);
 					i_see.Add(looking_at, symbols[map[looking_at.Key][looking_at.Value]]);
 					Blocked = !symbols[map[looking_at.Key][looking_at.Value]];
-					Console.WriteLine("look >> " + (sight == look));
-					Console.WriteLine("!Blocked >> " + !Blocked);
-					Console.WriteLine("!memory.Contains(looking_at) >> {0}", !memory.Contains(looking_at));
-					Console.WriteLine("!choices.Contains(looking_at) >> {0}", !choices.Contains(looking_at));
+					// Console.WriteLine("look >> " + (sight == look));
+					// Console.WriteLine("!Blocked >> " + !Blocked);
+					// Console.WriteLine("!memory.Contains(looking_at) >> {0}", !memory.Contains(looking_at));
+					// Console.WriteLine("!choices.Contains(looking_at) >> {0}", !choices.Contains(looking_at));
 					if(sight == look && !Blocked && !memory.Contains(looking_at) && !choices.Contains(looking_at)){
 						choices.Add(looking_at);
 					}
@@ -400,8 +404,8 @@ class Program
 							}
 							if(start.Key == i && start.Value == j){
 								startFound = true;
-								temp = new KeyValuePair<int,int>(i, j);
-								path.Add(temp);
+								// temp = new KeyValuePair<int,int>(i, j);
+								// path.Add(temp);
 								gotcha = true;
 							}else{
 								if( (d-1) == pathFinder[i][j] ){
@@ -466,12 +470,13 @@ class Program
 
 		foreach(Agent a in agents){
 			a.doLive();
+			Console.WriteLine("Destination >> {0}", a.dist);
 			current_situation[a.pos.Key][a.pos.Value] = a.sym;
-			Console.WriteLine("a.i_see.Keys >> {0}", a.i_see.Keys.Count);
-			foreach(KeyValuePair<int,int> coords_see in a.choices){
-				current_situation[coords_see.Key][coords_see.Value] = '*';
-				Console.WriteLine("{0} : {1} >> {2}", coords_see.Key, coords_see.Value, current_situation[coords_see.Key][coords_see.Value]);
-			}
+			// Console.WriteLine("a.i_see.Keys >> {0}", a.i_see.Keys.Count);
+			// foreach(KeyValuePair<int,int> coords_see in a.choices){
+			// 	current_situation[coords_see.Key][coords_see.Value] = '*';
+			// 	// Console.WriteLine("{0} : {1} >> {2}", coords_see.Key, coords_see.Value, current_situation[coords_see.Key][coords_see.Value]);
+			// }
 		}
 		for (int i =0; i < current_situation.Length; i++){
 			// Console.Write("|");
@@ -497,7 +502,9 @@ class Program
 		try{
 			agents = new List<Agent>();
 			Agent Bond = new Agent('@', "Bond");
+			Agent Bond2 = new Agent('%', "Bond");
 			agents.Add( Bond );
+			agents.Add( Bond2 );
 
 			String[] temp = File.ReadAllLines("maze.txt");
 			map = new char[temp.Length][];
